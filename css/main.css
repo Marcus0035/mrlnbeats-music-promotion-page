@@ -1,0 +1,49 @@
+main {
+    background-image: url(../img/yt-banner-no-words.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.videos .video iframe {
+    max-width: clamp(2px, 560px, 100%);
+    border-radius: 5px;
+}
+
+.video {
+    padding: 20px;
+    text-align: center;
+}
+
+
+#beats{
+    text-align: center;
+    padding: 50px;
+    font-size: 4rem;
+    display: block;
+    background: var(--transwer);
+}
+
+
+
+.more p, .more h3 {
+    color: var(--transwer);
+    text-align: center;
+    line-height: 2rem;
+    cursor: pointer;
+}
+
+.more p a {
+    color: black;
+}
+
+
+@media screen and (min-width: 1200px) {
+    .videos .video iframe {
+        width: 100%;
+    }
+
+    .videos {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}

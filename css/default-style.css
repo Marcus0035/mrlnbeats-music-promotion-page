@@ -1,0 +1,26 @@
+:root {
+    --dark: rgb(59, 59, 59);
+    --more-dark: #000;
+    --middle: #7F7979;
+    --less-light: #5F5B6B;
+    --light: white;
+    --transwer: rgba(0, 0, 0, 0.842);
+    
+    --default-font: "Anton", sans-serif;
+}
+
+* {
+    font-family: var(--default-font);
+    font-weight: 400;
+    font-style: normal;
+    color: var(--light);
+    font-size: 1.25rem;
+    line-height: 1rem;
+
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}

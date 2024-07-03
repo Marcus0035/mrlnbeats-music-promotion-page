@@ -1,0 +1,109 @@
+.header-image {
+    background-image: url(../img/yt-banner.png);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-attachment: fixed;
+    background-size: cover;
+    min-height: 100vh;
+
+}
+
+.main-nav {
+    width: 100%;
+    padding: 10px;
+    background: var(--transwer);
+    z-index: 10;
+    position: fixed;
+    left: 0;
+    top: 0;
+}
+
+/* CSS pro skrytí navigace */
+.main-nav.skryt {
+    transform: translateY(-100%);
+    transition: transform 0.5s ease-in-out;
+}
+
+.main-nav .top-menu {
+    display: none;
+}
+
+.links {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.top-menu {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+    text-align: center;
+}
+
+.main-nav li {
+    list-style: none;
+    padding: 10px 0;
+}
+
+.main-nav li a {
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+.main-nav li a i {
+    border-radius: 50%;
+}
+
+.main-nav li a:hover,
+.main-nav li a:active,
+.main-nav li a i:hover,
+.main-nav li a i:active {
+    background-color: var(--dark);
+}
+
+@media screen and (min-width: 600px) {
+    .main-nav .top-menu {
+        display: grid;
+    }
+}
+@media screen and (min-width: 2000px) {
+    /* .main-nav .top-menu {
+        display: grid;
+        height: 10vh;
+        align-items: center;
+    }
+
+    .top-menu a {
+        font-size: 3vh;
+    }
+    
+    .links {
+        padding: 1vh;
+    }
+
+    .links i {
+        font-size: 2vh;
+    } */
+
+    .main-nav {
+        display: grid;
+        grid-template-columns: 3fr 1fr;
+    }
+
+    .top-menu {
+        display: flex;
+        justify-content: space-between;
+        padding: 4vh;
+    }
+    .top-menu a, .links i {
+        font-size: 3vh;
+    }
+
+    .links {
+        display: flex;
+        justify-content: baseline;
+    }
+
+}

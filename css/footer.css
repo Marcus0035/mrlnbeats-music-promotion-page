@@ -1,0 +1,14 @@
+#disclaimer {
+    background-color: black;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+    bottom: 0;
+    width: 100%;
+}
+
+
+#disclaimer p {  
+    font-size: 0.875rem;
+    line-height: 1.5rem;
+}

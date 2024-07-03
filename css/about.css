@@ -1,0 +1,51 @@
+.about {
+    background-color: var(--more-dark);
+    padding: 50px;
+    cursor: pointer;
+}
+
+.info {
+    display: inline;
+    text-align: center;
+    padding: 50px;
+}
+
+.info p {
+    line-height: 2rem;
+    text-align: center;
+    color: white;
+}
+
+.info li {
+    list-style: none;
+}
+
+.info a i{
+    color: white;
+    font-size: 2rem;
+    margin: 10px;
+}
+
+.info img {
+    display: none;
+    border-radius: 50%;
+}
+
+.info .formatting-text {
+    text-align: justify;
+}
+
+#high-lines p, #high-lines li{
+    line-height: 5rem;
+}
+
+@media screen and (min-width: 1200px) {
+    .info {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    .info img {
+        display: block;
+        border-radius: 50%;
+    }
+}
